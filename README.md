@@ -1,17 +1,17 @@
-📌 Project Overview
+# Project Overview
 
 This project implements an end-to-end Fake News Detection system using Machine Learning and Natural Language Processing (NLP) techniques.
 The system classifies news articles as FAKE or REAL based on textual patterns learned from labeled data.
 
 The objective of this project is to demonstrate the complete ML pipeline—from preprocessing raw text to training, evaluating, and using a trained model for prediction—rather than performing factual or real-world fact verification.
 
-🔍 Problem Statement
+# Problem Statement
 
 The rapid spread of information on digital platforms has increased the risk of misinformation. Automated systems can assist in flagging potentially misleading content by learning patterns commonly associated with fake or real news articles.
 
 This project explores how supervised machine learning can be applied to the fake news detection problem using textual data.
 
-🧠 Methodology & Approach
+# Methodology & Approach
 
 The project follows a standard supervised text-classification workflow:
 
@@ -75,7 +75,7 @@ New news text can be entered via a command-line interface.
 
 The system outputs a prediction: FAKE or REAL.
 
-📂 Project Structure
+# Project Structure
 fake-news-detection-ml/
 ├── data/
 │   └── news.csv
@@ -89,7 +89,8 @@ fake-news-detection-ml/
 ├── README.md
 └── .gitignore
 
-▶️ How to Run the Project
+# How to Run the Project
+
 1️⃣ Create and Activate Virtual Environment
 python -m venv venv
 venv\Scripts\activate
@@ -106,7 +107,7 @@ python src/predict.py
 
 Enter any news text when prompted to receive a prediction.
 
-📊 Model Performance
+# Model Performance
 
 Algorithm: Logistic Regression
 
@@ -116,7 +117,7 @@ Accuracy: ~91–92%
 
 Model accuracy reflects performance on the provided dataset and does not guarantee real-world accuracy.
 
-⚠️ Important Note on Predictions
+# Important Note on Predictions
 
 The system may classify apparently legitimate or neutral news as FAKE.
 This behavior is expected and highlights the limitations of pattern-based machine learning approaches.
@@ -131,7 +132,7 @@ The model:
 
 ✅ Identifies statistical similarities between text and training data
 
-🚧 Limitations
+# Limitations
 
 The model is trained on a specific public dataset and learns linguistic patterns rather than factual correctness.
 
@@ -143,7 +144,7 @@ Region-specific or generic news (e.g., Indian policy or local news) may be miscl
 
 The system should be used as an assistive ML tool, not as a definitive fake-news verifier.
 
-🔮 Future Work
+# Future Work
 
 Incorporate Indian and region-specific news datasets to reduce domain bias.
 
@@ -153,7 +154,7 @@ Add source credibility analysis.
 
 Deploy the system as a web application or API.
 
-📚 Technologies Used
+# Technologies Used
 
 Python
 
@@ -167,3 +168,5 @@ TF-IDF
 
 Logistic Regression
 
+## Why This Project
+This project was built to understand how machine learning models behave in real-world NLP problems, including their limitations. Special attention was given to observing bias, misclassification, and the impact of dataset choice rather than optimizing solely for accuracy.
